@@ -1,6 +1,11 @@
 .needs-subscription {
   z-index: 1;
   text-align: center;
+  /* font-family: 'CustomMontserrat';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #222359; */
   font-size: 3rem;
   background-image: linear-gradient(#f4f4f400, #f4f4f480 10%, #000);
   position: absolute;
@@ -9,4 +14,81 @@
   padding-top: 6rem;
   margin-top: -10rem;
   height: 26rem;
+}
+
+.title, .subTitle{
+  font-family: 'CustomMontserrat';
+  font-style: normal;
+  font-weight: 600;
+
+  line-height: 120%;
+  /* or 67px */
+
+
+  /* Text/dark_blue */
+
+  color: #222359;
+}
+.title{
+  font-size: 56px;
+}
+.subTitle{
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+/* pagination.html: https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L117 */
+.pagination {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: .375rem;
+  font-size: 20px;
+}
+
+[dir="rtl"] .pagination li {
+  margin-left: .375rem;
+  margin-right: 0;
+}
+
+.pagination li a {
+  background-color: white;
+  background: white;
+
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  font-family: 'CustomMontserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #A8A8A8;
+  padding: 4px 7px;
+}
+.pagination li.disabled {
+  display: none;
+}
+.pagination li
+.active a:link,
+.pagination li.active a:active,
+.pagination li.active a:visited, .pagination li.active a {
+  color: #9392F7;
+  background-color: transparent;
+
+}
+.pagination li
+.active a:active {
+  color: #9392F7;
+  background-color: transparent;
+}
+
+#TableOfContents ul li {
+  margin-bottom: 0;
+  margin-left: 0;
+
+  background-color: #9392F7;
 }
